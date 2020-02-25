@@ -1,0 +1,349 @@
+/*Inicio*/
+
+@charset "utf-8";
+body {
+    font-family: verdana, sans-serif;
+    font-size: 1em;
+    /*Cambio el tamaño de la letra en un tanto por ciento*/
+    background-color: #dddddd;
+}
+
+body {
+    width: 85%;
+    margin: -10px auto 10px auto;
+    /*Desplazamiento de los bordes*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px 10px 10px 10px;
+    /*Separacion de los margenes*/
+}
+
+p {
+    /*Todos los parafos aliniados y justificados*/
+    text-align: justify;
+    text-indent: 20px;
+}
+
+#cabecera {
+    height: 120px;
+    margin: 5px;
+    border-bottom: 1px #606060 dashed;
+    /*solid,dotted,double*/
+}
+
+#titulo h1 {
+    font-size: 3em;
+    position: absolute;
+    top: 0px;
+    margin: 20px;
+}
+
+#titulo h2 {
+    font-size: 2.5em;
+    position: absolute;
+    top: 60px;
+    margin: 20px;
+}
+
+.tema {
+    font-family: 'FonteLogo', sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #cccccc, 2px 2px 0 #c9c9c9, 3px 3px 0 #bbbbbb, 4px 4px 0 #b9b9b9, 5px 5px 0 #aaaaaa, 6px 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 1px 1px 3px rgba(0, 0, 0, 0.3), 3px 3px 5px rgba(0, 0, 0, 0.2), 5px 5px 10px rgba(0, 0, 0, 0.25), 10px 10px 10px rgba(0, 0, 0, 0.2), 20px 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/*Menú*/
+
+#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+}
+
+#menu li {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    transition: background-color 1s;
+    border-radius: 2px;
+    /*Color*/
+    background-color: #111111;
+    color: #ffffff;
+    text-shadow: 0 0 10px #51e225, 0 0 5px #51e225;
+}
+
+#menu li:hover {
+    background-color: #606060;
+}
+
+#menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/*Menú*/
+
+
+/*Cabecera imagen*/
+
+#cabecera #img_cabecera {
+    position: absolute;
+    left: 87%;
+    top: 13%;
+}
+
+#img_cabecera {
+    position: relative;
+    border: 1px solid white;
+    box-shadow: 3px 2px 3px black;
+    /*Sombra*/
+    border-radius: 0.5em;
+}
+
+
+/*Cabecera imagen*/
+
+#cabecera_secuandario {
+    background-color: #474444;
+}
+
+#cabecera_secundario h6 {
+    color: #222222;
+    text-shadow: 0 3px 5px rgba(255, 255, 255, 0.1);
+    font-family: 'Fontelogo', sans-serif;
+    font-size: 15pt;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+#cabecera_secundario h4 {
+    color: #003cff;
+    text-shadow: 1px 1px 0px #f4f4dc, 2px 2px 0px #003cff;
+    font-size: 13pt;
+    margin: 0px;
+}
+
+#cabecera_secundario h5 {
+    color: #585858;
+    text-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2), 1px 1px 2px rgba(46, 46, 46, 0.7);
+    font-size: 15px;
+    text-align: right;
+}
+
+#cuerpo {
+    display: block;
+    width: 60%;
+    height: 100%;
+    float: left;
+    /*Ubicacion lado izquierdo*/
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+    border-right: 1px dashed #606060;
+}
+
+#cuerpo h3 {
+    color: #606060;
+    font-size: 15pt;
+    background-color: #b3afaf;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+#lateral {
+    background-color: #bebdbd;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    display: block;
+    width: 32%;
+    float: right;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#lateral h3 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 15px;
+    color: white;
+    padding: 5px;
+    background-color: #606060;
+}
+
+
+/*Datos*/
+
+#datos {
+    clear: both;
+    border-top: 1px dashed #606060;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+#datos p {
+    text-align: center;
+}
+
+figure._leyenda {
+    width: 600px;
+    height: 350px;
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    /*Sombra*/
+}
+
+figure._leyenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure._leyenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure._leyenda:hover figcaption {
+    opacity: 1;
+}
+
+#videos video {
+    width: 355px;
+    position: relative;
+    border: 5px solid white;
+    box-shadow: 1px 1px 4px black;
+    /*Sombra*/
+}
+
+
+/*Lista de aplicaciones*/
+
+#aplicaciones p:nth-child(odd) {
+    color: rgba(0, 47, 255, 0.8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#aplicaciones p:nth-child(even) {
+    color: rgba(0, 47, 255, 0.8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#aplicaciones li:nth-of-type(odd) {
+    color: rgba(255, 55, 5, 0.8);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#aplicaciones li:nth-of-type(even) {
+    color: rgba(255, 55, 5, 0.8);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*Lista de aplicaciones*/
+
+
+/*Lista beneficios*/
+
+#beneficios li:nth-child(odd) {
+    color: rgba(0, 47, 255, 0.8);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+}
+
+#beneficios li:nth-child(even) {
+    color: rgba(0, 47, 255, 0.8);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+}
+
+
+/*Lista beneficios*/
+
+
+/*Materiales*/
+
+#materiales ul:nth-of-type(odd) {
+    color: rgba(0, 47, 255, 0.8);
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+#materiales h4:nth-of-type(odd) {
+    color: rgba(255, 5, 5, 0.6);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*Materiales*/
+
+
+/*Bibliografía*/
+
+#bibliografia cite {
+    font-family: monospace;
+}
+
+
+/*Bibliografía*/
+
+:root {
+    background-color: rgba(59, 46, 16, 0.849);
+}
+
+html {
+    background-color: rgba(71, 77, 45, 0.877);
+}
+
+
+/*pseudoelementos*/
+
+#cabecera_secundario h4::before {
+    content: "\"";
+}
+
+#cabecera_secundario h4::after {
+    content: "\"";
+}
+
+#cabecera_secundario h6::before {
+    content: url(Recursos.Imagenes/database_data.png);
+}
+
+article p:first-of-type::first-letter {
+    font-size: 1.3em;
+    font-style: unset;
+    font-family: script;
+}
+
+.inicial_tema p:first-of-type {
+    text-indent: 0px;
+}
+
+.inicial_tema p:first-of-type::first-letter {
+    float: left;
+    font-size: 3em;
+    font-family: script;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    color: #696969;
+}
+
+
+/*pseudoelementos*/
